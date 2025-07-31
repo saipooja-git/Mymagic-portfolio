@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getPosts } from "@/utils/utils";
+import { getPosts } from "@/utils/utils.server";
 import { Meta, Schema, AvatarGroup, Button, Column, Flex, Heading, Media, Text } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { formatDate } from "@/utils/formatDate";

@@ -1,0 +1,89 @@
+.contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background: radial-gradient(circle at top, #e0f7fa 0%, #ffffff 100%);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  animation: slideUp 0.8s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emoji {
+  font-size: 1.8rem;
+}
+
+.subtext {
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: #0284c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #0f766e;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Sai",
+  lastName: "Pooja",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Java Full Stack Developer",
+  avatar: "/images/avatar.jpg" ,width:"100%",height:"100%",
+  email: "saipoojareddypalle@gmail.com",
+  location: "United States",
+  languages: ["English", "Telugu","Hindi"],
 };
 
 const newsletter = {
@@ -25,22 +25,15 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/saipooja-git",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/saipoojareddypalle/",
   },
   {
     name: "Email",
@@ -63,8 +56,9 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+    Hi, I’m Sai Pooja — a recent graduate from Northwest Missouri State University with real-world, hands-on experience building full-stack applications.  
+<br />I'm actively looking for full-time roles where I can contribute and grow as a developer. When I'm not coding for work, I’m creating my own projects for fun!
+
     </>
   ),
 };
@@ -90,34 +84,37 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+      I'm Sai Pooja, a full-stack developer with a passion for building robust, 
+      user-friendly applications that bridge design and functionality. Based in the U.S.,
+       I transform real-world challenges into clean, scalable software solutions. 
+       My work spans modern web technologies,responsive UI design, 
+       and full-cycle application development.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+        company: "Northwest Missouri State University",
+        timeframe: "2024 - 2025",
+        role: "Graduate Assistant & Data Analyst",
+        achievements: [  
+<>Built and deployed full-stack web applications using Spring Boot, React/Angular, Node.js, and MongoDB — delivering performant, scalable solutions.</>,
+  <>Designed RESTful APIs with Spring Boot and Node.js, while implementing responsive, accessible UIs with React/Angular for seamless user experiences.</>,
+  <>Integrated secure authentication, state management, and client-side routing, enhancing application reliability and user engagement.</>,
+<>Developed interactive dashboards in Power BI and Tableau to visualize trends across large datasets, driving insights for academic and operational strategies.</>,
+  <> Automated ETL workflows using SQL and Python, reducing data processing time and improving accuracy for university-wide reports.</>,
+<>Developed secure, scalable backend services using Java 8, Spring, and JPA, reducing invoice processing latency by 35%.</>,
+<>Refactored legacy JSP pages to modular Angular components, improving maintainability and scalability.</>,
+<>Implemented AWS-based solutions with ECS, S3, EC2, Aurora, API Gateway, and Route 53, improving service uptime and scalability by 40%.</>,
+<>Containerized microservices using Docker and deployed to Kubernetes clusters, enhancing system reliability and reducing downtime.</>,
+
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/cover-01.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -125,75 +122,135 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
+        company: "HighRadius Pvt Ltd",
+        timeframe: "2021 - 2022",
+        role: "Software Engineer",
+       achievements: [
+  <>Built scalable full-stack modules using Java (Spring Boot) and React, improving transaction processing speed by 30%.</>,
+  <>Led the development of RESTful APIs and integrated third-party services, streamlining client onboarding and reducing integration time by 25%.</>,
+  <>Collaborated with cross-functional teams to deploy enterprise features that enhanced system reliability and user satisfaction.</>,
+],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Northwest Missouri State University",
+        description: <>Studied Applied Computer Science.</>,
       },
       {
         name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+description: <>Pursued online learning and personal projects to deepen expertise in modern web development.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Backend Development",
+      description: (
+        <>
+          Experienced with Spring Boot, Node.js, Express, Flask, Django, Servlets, JPA, and API design for scalable web services.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-01.jpg",
+      //     alt: "Backend project",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+    {
+      title: "Frontend Development",
+      description: (
+        <>
+          Skilled in building dynamic UIs using React, Angular, HTML, CSS, Bootstrap, and TypeScript.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-02.jpg",
+      //     alt: "Frontend project",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+    {
+      title: "Programming Languages",
+      description: (
+        <>
+          Proficient in Python, Java, JavaScript, TypeScript, C, C++, Go, Kotlin, and C#.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-03.jpg",
+      //     alt: "Code base",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+    {
+      title: "Databases",
+      description: (
+        <>
+          Hands-on experience with MySQL, PostgreSQL, MongoDB, AWS DynamoDB.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-04.jpg",
+      //     alt: "Database diagram",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+    {
+      title: "Data & Analytics Tools",
+      description: (
+        <>
+          Skilled with Informatica, Tableau, and RStudio for data processing and visualization.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-05.jpg",
+      //     alt: "Analytics dashboard",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+    {
+      title: "Cloud Platforms",
+      description: (
+        <>
+          Deployed and managed applications on AWS and GCP using services like EC2, Lambda, S3, and GCP Cloud Functions.
+        </>
+      ),
+      // images: [
+      //   {
+      //     src: "/images/projects/project-01/cover-06.jpg",
+      //     alt: "Cloud infrastructure",
+      //     width: 16,
+      //     height: 9,
+      //   },
+      // ],
+    },
+  ],
+},
+
 };
 
 const blog = {
@@ -201,8 +258,6 @@ const blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -210,8 +265,6 @@ const work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
@@ -219,8 +272,6 @@ const gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
@@ -265,4 +316,60 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+const projects = {
+  path: "/projects",
+  label: "Projects",
+  title: `${person.name}'s Creative Explorations`,
+  description: `Dive into a curated showcase of innovative projects and personal experiments by ${person.name}, reflecting curiosity, creativity, and real-world problem solving.`,
+  items: [
+    {
+      slug: "todo-app",
+      title: "Todo Web Application",
+      tag: "Angular & Firebase",
+      image: "/images/projects/todo-app.png",
+      thought: "Wanted to build a productivity tool that simplifies daily task management using Angular and Firebase.",
+    },
+    {
+      slug: "schoolbus-tracker",
+      title: "School Bus Tracker App",
+      tag: "Spring Boot · React · Node.js",
+      image: "/images/projects/schoolbus-tracker.png",
+      thought: "Inspired by parents’ concern for student safety—this tracks school buses in real time.",
+    },
+    {
+      slug: "chatgpt-bot",
+      title: "ChatGPT Chatbot",
+      tag: "JavaScript · HTML · CSS",
+      image: "/images/projects/chatgpt-bot.png",
+      thought: "Created an interactive web-based ChatGPT experience for fun and educational use cases.",
+    },
+    {
+      slug: "drug-counselling-system",
+      title: "Drug Counselling & Guidance System",
+      tag: "Full Stack Java · HTML · CSS",
+      image: "/images/projects/drug-counselling.png",
+      thought: "Built to assist individuals struggling with substance abuse by offering guidance and support.",
+    },
+    {
+      slug: "calmsphere",
+      title: "Calmsphere Meditation App",
+      tag: "Android",
+      image: "/images/projects/calmsphere.jpg",
+      thought: "Personal project to promote mental wellness through guided meditations and calming visuals.",
+    },
+  ],
+};
+
+
+
+ const contact = {
+  label: "Contact",
+  heading: "Get in Touch",
+  email: "saipoojareddypalle@gmail.com",
+  linkedin: "https://linkedin.com/in/saipoojareddypalle/",
+  resumeLink: "/resume.pdf",
+  description: "I'm always open to opportunities or collaborations. Let's connect!"
+};
+
+
+export { person, social, newsletter, home, about, work, projects, contact };

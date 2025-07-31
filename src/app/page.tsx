@@ -4,7 +4,7 @@ import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta
 import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts";
+import Posts from "@/components/Project/page"; // ✅ correct if it's default export
 
 export default function Home() {
   return (
@@ -78,7 +78,7 @@ export default function Home() {
             </Heading>
           </Flex>
           <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
+            <Posts />
           </Flex>
         </Flex>
       )}
