@@ -282,52 +282,53 @@ export default function About() {
 
           {/* Technical Skills Section */}
           {about.technical.display && (
-            <>
-              <Heading
-                as="h2"
-                id={about.technical.title}
-                variant="display-strong-s"
-                marginBottom="40"
-              >
-                {about.technical.title}
-              </Heading>
-              <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, idx) => (
-                  <Column key={idx} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">
-                      {skill.title}
-                    </Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
+  <>
+    <Heading
+      as="h2"
+      id={about.technical.title}
+      variant="display-strong-s"
+      marginBottom="40"
+    >
+      {about.technical.title}
+    </Heading>
+    <Column fillWidth gap="l">
+      {about.technical.skills.map((skill, idx) => (
+        <Column key={idx} fillWidth gap="4">
+          <Text id={skill.title} variant="heading-strong-l">
+            {skill.title}
+          </Text>
+          <Text variant="body-default-m" onBackground="neutral-weak">
+            {skill.description}
+          </Text>
 
-                    {/* Skill Images ✅ Fixed */}
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, imgIdx) => (
-                          <Flex
-                            key={imgIdx}
-                            border="neutral-medium"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              sizes={String(image.width)}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
-                ))}
-              </Column>
-            </>
+          {/* ✅ FIX: Check if images exist before rendering */}
+          {"images" in skill && Array.isArray(skill.images) && skill.images.length > 0 && (
+            <Flex fillWidth paddingTop="m" gap="12" wrap>
+              {skill.images.map((image, imgIdx) => (
+                <Flex
+                  key={imgIdx}
+                  border="neutral-medium"
+                  radius="m"
+                  minWidth={image.width}
+                  height={image.height}
+                >
+                  <Media
+                    enlarge
+                    radius="m"
+                    sizes={String(image.width)}
+                    alt={image.alt}
+                    src={image.src}
+                  />
+                </Flex>
+              ))}
+            </Flex>
           )}
+        </Column>
+      ))}
+    </Column>
+  </>
+)}
+
         </Column>
       </Flex>
     </Column>
